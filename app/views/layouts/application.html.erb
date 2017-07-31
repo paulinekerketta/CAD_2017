@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Newrapp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <%= link_to "Home" , welcome_home_path %>
+  <%= link_to "Menu" , welcome_menu_path %>
+  <%= link_to "Order" , welcome_order_path %>
+  <%= link_to "ContactUS" , welcome_contactus_path %>
+  <%= link_to "AboutUs" , welcome_aboutus_path %>
+  <%= link_to "Home" , welcome_home_path %>
+  <%= link_to "Home" , welcome_home_path %>
+    <%= yield %>
+  </body>
+</html>
